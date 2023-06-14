@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.grid1{grid-area: header;}
+.grid2{grid-area:menu;}
+.grid3{grid-area:main;}
+.grid4{grid-area: right;}
+.grid5{grid-area: footer;}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 1.1rem;
+    background: #2196F3;
+    padding: 1.1rem;
+}
+.grid-container > div{
+    background: rgba(255, 255, 255, 0.8);
+    padding:1.6rem;
+    text-align: center;
+    font-size: 30px;
+}
