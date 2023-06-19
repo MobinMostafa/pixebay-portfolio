@@ -294,6 +294,11 @@ img{
     height: 100%;
 
 }
+@media (max-width:550px){
+    .banner{
+        min-height: 600px;
+    }
+}
 .overlay{
     position: absolute;
     top:0;
